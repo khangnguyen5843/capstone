@@ -1,0 +1,202 @@
+body,
+html {
+  font-family: "Jost", sans-serif;
+  line-height: 1.15;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+.header {
+  background-color: #fff;
+  position: fixed;
+  top: 40px;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+}
+.header .container {
+  padding: 0 30px;
+}
+.header .container .navbar-brand {
+  font-size: 40px;
+  font-weight: 600;
+}
+.header .container .navbar-nav li a {
+  font-size: 20px;
+  font-weight: 500;
+}
+.header .container .navbar-nav li a:hover {
+  color: #189a46 !important;
+  background-color: #fff;
+  border-bottom: 2px solid #189a46;
+}
+.banner {
+  height: 241px;
+  margin-top: 90px;
+  background: url(https://demo.w3layouts.com/demos_new/template_demo/02-07-2020/pooch-care-liberty-demo_Free/1396504601/web/assets/images/banner4.jpg)
+    no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  display: grid;
+  align-items: center;
+  padding: 1em 0;
+  text-align: center;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #0c0c0c;
+  opacity: 0.6;
+}
+.banner .banner-content h2 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+}
+.banner .banner-content span {
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+}
+.banner .banner-content a {
+  text-decoration: none;
+  color: #189a46;
+  font-size: 20px;
+  font-weight: 400;
+}
+.banner .banner-content i {
+  color: #fff;
+  font-size: 14px;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.categories .categories-content .item {
+  margin: 80px 0;
+  height: 477px;
+}
+.categories .categories-content .item img {
+  max-width: 100%;
+  height: 396px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.categories .categories-content .item h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2em;
+  letter-spacing: 1px;
+  color: #f52636;
+  padding-top: 50px;
+}
+.categories .categories-content .item h5 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+.categories .categories-content .item p {
+  color: #696969;
+  font-size: 20px;
+  line-height: 2em;
+}
+.categories .categories-content .item a {
+  display: inline-block;
+  text-decoration: none;
+  color: #0c0c0c;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: #189a46 solid 2px;
+  margin-top: 10px;
+}
+.categories .categories-content .item a:hover {
+  color: #189a46;
+}
+.footer {
+  background-color: #0c0c0c;
+  margin-top: 100px;
+}
+.footer .container p {
+  text-align: center;
+  color: #696969;
+  padding: 30px 0;
+}
+.footer .container p a {
+  text-decoration: none;
+  color: #f53626;
+}
+.footer .container p a:hover {
+  text-decoration: underline;
+}
+.footer .footer-content {
+  padding: 50px 50px;
+  border-bottom: #696969;
+}
+.footer .footer-content h5 {
+  color: #fff;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.footer .footer-content ul {
+  list-style: none;
+  padding-left: 0;
+  color: #696969;
+  line-height: 30px;
+  font-size: 18px;
+}
+.footer .footer-content ul a {
+  text-decoration: none;
+  color: #696969;
+}
+.footer .footer-content ul a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.footer .footer-content .left i {
+  margin: 0 5px;
+  color: #696969;
+  cursor: pointer;
+}
+.footer .footer-content .left i:hover {
+  color: #fff;
+}
+.footer button {
+  position: fixed;
+  bottom: 90px;
+  right: 15px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  background: #189a46;
+  padding: 0;
+  line-height: 36px;
+  border-radius: 50px;
+}
+@media screen and (max-width: 992px) {
+  .categories .categories-content .item {
+    margin-bottom: 300px !important;
+    justify-content: center;
+    text-align: center;
+  }
+  .categories {
+    padding: 100px 0;
+  }
+  .categories .categories-content .item2 .left {
+    order: 1;
+  }
+}

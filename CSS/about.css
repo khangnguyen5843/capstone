@@ -1,0 +1,374 @@
+body,
+html {
+  font-family: "Jost", sans-serif;
+  line-height: 1.15;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+.header {
+  background-color: #fff;
+  position: fixed;
+  top: 40px;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+}
+.header .container {
+  padding: 0 30px;
+}
+.header .container .navbar-brand {
+  font-size: 40px;
+  font-weight: 600;
+}
+.header .container .navbar-nav li a {
+  font-size: 20px;
+  font-weight: 500;
+}
+.header .container .navbar-nav li a:hover {
+  color: #189a46 !important;
+  background-color: #fff;
+  border-bottom: 2px solid #189a46;
+}
+.banner {
+  height: 241px;
+  margin-top: 90px;
+  background: url(https://demo.w3layouts.com/demos_new/template_demo/02-07-2020/pooch-care-liberty-demo_Free/1396504601/web/assets/images/banner4.jpg)
+    no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  display: grid;
+  align-items: center;
+  padding: 1em 0;
+  text-align: center;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #0c0c0c;
+  opacity: 0.6;
+}
+.banner .banner-content h2 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+}
+.banner .banner-content span {
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+}
+.banner .banner-content a {
+  text-decoration: none;
+  color: #189a46;
+  font-size: 20px;
+  font-weight: 400;
+}
+.banner .banner-content i {
+  color: #fff;
+  font-size: 14px;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+.about .about-content {
+  padding: 50px 40px;
+}
+.about .about-content .left h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 2em;
+  letter-spacing: 1px;
+  color: #f52636;
+  margin-top: 40px;
+}
+.about .about-content .left h5 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+}
+.about .about-content .left p {
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+.about .about-content .right p {
+  font-size: 20px;
+  color: #696969;
+  line-height: 28px;
+}
+.about .about-content .right a {
+  display: inline-block;
+  text-decoration: none;
+  color: #0c0c0c;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: #189a46 solid 2px;
+  margin-top: 20px;
+}
+.about .about-content .right a:hover {
+  color: #189a46;
+}
+.history {
+  background: url(https://demo.w3layouts.com/demos_new/template_demo/02-07-2020/pooch-care-liberty-demo_Free/1396504601/web/assets/images/banner2.jpg)
+    no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  align-items: center;
+  height: 562px;
+}
+.history::before {
+  content: "";
+  background-color: rgba(0, 4, 8, 0.69);
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.history .history-content .right h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 2em;
+  letter-spacing: 1px;
+  color: #f52636;
+}
+.history .history-content .right h5 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #fff;
+}
+.history .history-content .right p {
+  color: #fff;
+  opacity: 0.7;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 30px 0;
+}
+.history .history-content .right .miletones .item h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.history .history-content .right .miletones .item span {
+  color: #fff;
+  opacity: 0.7;
+  font-size: 20px;
+  line-height: 28px;
+}
+.reason .reason-content {
+  padding: 80px 40px;
+}
+.reason .reason-content .left {
+  text-align: right;
+}
+.reason .reason-content .left h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 2em;
+  letter-spacing: 1px;
+  color: #f52636;
+  margin-top: 40px;
+}
+.reason .reason-content .left h5 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+}
+.reason .reason-content .left p {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  opacity: 0.9;
+}
+.reason .reason-content .left img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+.reason .reason-content .right .service .item {
+  margin-bottom: 45px;
+}
+.reason .reason-content .right .service .logo i {
+  color: #189a46;
+  font-size: 44px;
+  text-align: right;
+  display: block;
+}
+.reason .reason-content .right .service .item .content h4 {
+  margin-bottom: 8px;
+  color: #0c0c0c;
+  font-weight: 600;
+  font-size: 24px;
+}
+.reason .reason-content .right .service .item .content p {
+  color: #696969;
+  font-size: 20px;
+  line-height: 32px;
+}
+.team {
+  background-color: rgba(249, 247, 254, 1);
+}
+.team .title {
+  padding: 50px 0;
+  text-align: center;
+}
+.team .title h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 2em;
+  letter-spacing: 1px;
+  color: #f52636;
+}
+.team .title h5 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+}
+.team .team-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+.team .team-content .item {
+  max-width: 295px;
+  height: 426px;
+}
+.team .team-content .item .top img {
+  display: block;
+  max-width: 100%;
+  border-radius: 12px;
+  transition: all 0.5 linear;
+}
+.team .team-content .item .bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+.team .team-content .item .bottom span {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #0c0c0c;
+}
+
+.team .team-content .item .bottom p {
+  font-size: 16px;
+  line-height: 25px;
+  color: #696969;
+}
+.team .team-content .item .bottom #logo {
+  display: inline-block;
+  margin-right: 6px;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  line-height: 30px;
+  text-align: center;
+  background: rgba(147, 107, 232, 0.05);
+  color: #189a46;
+}
+.team .team-content .item .bottom a i {
+  font-size: 12px;
+  line-height: 30px;
+}
+.team .team-content .item .bottom #logo:hover {
+  background-color: #189a46;
+  color: #fff;
+}
+.team .team-content .item #zoom:hover img {
+  transform: scale(1.1);
+  transition: all 0.4s;
+}
+.team .team-content .item span:hover {
+  color: #189a46;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.footer {
+  background-color: #0c0c0c;
+}
+.footer .container p {
+  text-align: center;
+  color: #696969;
+  padding: 30px 0;
+}
+.footer .container p a {
+  text-decoration: none;
+  color: #f53626;
+}
+.footer .container p a:hover {
+  text-decoration: underline;
+}
+.footer .footer-content {
+  padding: 50px 50px;
+  border-bottom: #696969;
+}
+.footer .footer-content h5 {
+  color: #fff;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.footer .footer-content ul {
+  list-style: none;
+  padding-left: 0;
+  color: #696969;
+  line-height: 30px;
+  font-size: 18px;
+}
+.footer .footer-content ul a {
+  text-decoration: none;
+  color: #696969;
+}
+.footer .footer-content ul a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.footer .footer-content .left i {
+  margin: 0 5px;
+  color: #696969;
+  cursor: pointer;
+}
+.footer .footer-content .left i:hover {
+  color: #fff;
+}
+.footer button {
+  position: fixed;
+  bottom: 90px;
+  right: 15px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  background: #189a46;
+  padding: 0;
+  line-height: 36px;
+  border-radius: 50px;
+}
+@media screen and (max-width: 768px){
+  .reason .reason-content .left{
+    text-align: center;
+  }
+}
